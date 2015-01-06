@@ -2,5 +2,5 @@
 
 adsApp.controller('MainController', function($scope){
 
-    $scope.hello = 'Hello App';
+    $scope.pageTitle = 'Home';
 });

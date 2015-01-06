@@ -1,0 +1,23 @@
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.sidebar h4 {
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    margin-top: 0;
+}
+
+main img {
+    width: 100%;
+}
+
+/* Common classes */
+.center {
+    text-align: center;
+}
+
+.underline {
+    border-bottom: 1px solid #d5d5d5;
+}
