@@ -1,11 +1,11 @@
 <section class="well" data-ng-repeat="ad in adsData.ads">
     <header class="clearfix">
         <div class="pull-left col-lg-pull-6"><h3>{{ad.title}}</h3></div>
-        <div class="pull-right"><small>3-Jan-2015</small></div>
+        <div class="pull-right"><small>{{ ad.date | date:'dd-MMM-yyyy'}}</small></div>
     </header>
     <main class="clearfix">
         <div class="pull-left col-sm-4">
-            <div class="well center"><img src="img/img1.png" alt=""></div>
+            <div class="well center"><img data-ng-src="{{ad.imageDataUrl}}" src="" alt=""></div>
         </div>
         <div class="pull-right col-sm-8">
             <div class="well">
