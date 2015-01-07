@@ -10,5 +10,7 @@ var adsApp = angular
             .otherwise({redirectTo: '/'});
 });
 
+adsApp.constant('baseSrvUrl', 'http://softuni-ads.azurewebsites.net/api/');
+
 
 

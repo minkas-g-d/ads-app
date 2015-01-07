@@ -1,9 +1,10 @@
 'use strict';
 
-adsApp.directive('townsDrct', function($compile) {
+adsApp.directive('townsDrct', function() {
     return {
+        controller: 'TownsCtrl',
         restrict: 'A',
-        templateUrl: 'templates/directives/towns.html'//,
-        //controller: TownsController
+        templateUrl: 'templates/directives/towns.html'
+
     };
 });

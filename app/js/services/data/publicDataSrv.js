@@ -1,16 +1,16 @@
 'use strict';
-adsApp.factory('adsData', ['$resource', 'baseAppUrl', function($resource, baseAppUrl){
+adsApp.factory('publicData', ['$resource', 'baseSrvUrl', function($resource, baseSrvUrl){
 
     function getAllTowns() {
-        return $resource(baseAppUrl + 'towns').get();
+        return $resource(baseSrvUrl + 'towns').get();
     }
 
     function getAllCategories() {
-        //return $resource(baseAppUrl + 'categories');
+        //return $resource(baseSrvUrl + 'categories');
     }
 
     function getAllAds() {
-        //return $resource(baseAppUrl + 'ads');
+        //return $resource(baseSrvUrl + 'ads');
     }
 
     return {
