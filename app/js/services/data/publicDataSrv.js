@@ -2,15 +2,15 @@
 adsApp.factory('publicData', ['$resource', 'baseSrvUrl', function($resource, baseSrvUrl){
 
     function getAllTowns() {
-        return $resource(baseSrvUrl + 'towns').get();
+        return $resource(baseSrvUrl + 'towns').query();
     }
 
     function getAllCategories() {
-        //return $resource(baseSrvUrl + 'categories');
+        //return $resource(baseSrvUrl + 'categories').query();
     }
 
     function getAllAds() {
-        //return $resource(baseSrvUrl + 'ads');
+        //return $resource(baseSrvUrl + 'ads').query();
     }
 
     return {
