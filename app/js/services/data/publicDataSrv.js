@@ -6,7 +6,7 @@ adsApp.factory('publicData', ['$resource', 'baseSrvUrl', function($resource, bas
     }
 
     function getAllCategories() {
-        //return $resource(baseSrvUrl + 'categories').query();
+        return $resource(baseSrvUrl + 'categories').query();
     }
 
     function getAllAds() {
@@ -14,8 +14,8 @@ adsApp.factory('publicData', ['$resource', 'baseSrvUrl', function($resource, bas
     }
 
     return {
-        getAllTowns: getAllTowns//,
-        //getAllCategories: getAllCategories,
+        getAllTowns: getAllTowns,
+        getAllCategories: getAllCategories//,
         //getAllAds: getAllAds
     };
 }]);

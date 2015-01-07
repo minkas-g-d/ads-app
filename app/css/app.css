@@ -13,6 +13,10 @@ main img {
     width: 100%;
 }
 
+body > footer .well {
+    margin-bottom: 0;
+}
+
 /* Common classes */
 .center {
     text-align: center;

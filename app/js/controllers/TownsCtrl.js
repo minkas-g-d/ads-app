@@ -5,7 +5,7 @@ adsApp.controller('TownsCtrl', ['$scope', 'publicData', function ($scope, public
         .$promise
         .then(
             function(data) {
-                console.log(data);
+                $scope.towns = data;
             },
             function(error) {
                 console.log(error);
