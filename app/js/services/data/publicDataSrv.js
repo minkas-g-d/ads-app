@@ -10,7 +10,7 @@ adsApp.factory('publicData', ['$resource', 'baseSrvUrl', function($resource, bas
     }
 
     function getAllAds() {
-        return $resource(baseSrvUrl + 'ads').query();
+        return $resource(baseSrvUrl + 'ads').get();
     }
 
     return {
