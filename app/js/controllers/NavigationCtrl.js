@@ -1,16 +1,13 @@
 'use strict';
 
 adsApp.controller('NavigationCtrl', ['$scope', '$location', function($scope, $location){
-    // TODO check if user is logged in and serve the right navigation
-    var isUserLogged = true;
-
-    console.log($location.path());
-
     $scope.isActive = function (viewLocation) {
         var active = (viewLocation === '#' + $location.path());
         return active;
     };
 
+    // TODO check if user is logged in and serve the right navigation
+    var isUserLogged = false;
     if(isUserLogged) {
         $scope.navLinks = [
             { text: 'Home', url: '#/' },

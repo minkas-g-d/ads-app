@@ -1,0 +1,93 @@
+<header>
+    <div class="well well-sm center">
+        <span>Ads - {{pageTitle}}</span>
+    </div>
+</header>
+<div class="wrapper">
+    <div class="row clearfix">
+        <div class="col-md-3">
+            <div data-navigation-drct></div>
+
+            <div class="well">
+                <p>To publish a new ad, please login.</p>
+                <a class="btn btn-primary btn-sm btn-block" href="#/login">Login</a>
+                <a class="btn btn-primary btn-sm btn-block" href="#/register">Register</a>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="well">
+                <form class="form-horizontal">
+                    <fieldset>
+                        <legend class="center">User Registration</legend>
+
+                        <div class="form-group col-md-12">
+                            <label class="" for="inputUname">Username:</label><br>
+                            <div>
+                                <input type="text" placeholder="Username" id="inputUname" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col-md-5">
+                            <div class="form-group">
+                                <label class="control-label" for="inputUpass">Password:</label><br>
+                                <div>
+                                    <input type="password" placeholder="Password" id="inputUpass" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="inputName">Name:</label><br>
+                                <div>
+                                    <input type="name" placeholder="Name" id="inputName" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="control-label" for="inputPhone">Phone:</label><br>
+                                <div>
+                                    <input type="tel" placeholder="Phone" id="inputPhone" class="form-control">
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <div class="col-lg-10 col-lg-offset-2">
+                                    <button class="btn btn-default">Cancel</button>
+                                    <button class="btn btn-primary" type="submit">Submit</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="col-md-5 col-lg-offset-1">
+                            <div class="form-group">
+                                <label class="control-label" for="inputConfirmUpass">Confirm Password:</label><br>
+                                <div class="">
+                                    <input type="password" placeholder="Confirm Password" id="inputConfirmUpass" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="inputUemail">Email:</label><br>
+                                <div class="">
+                                    <input type="email" placeholder="Email" id="inputUemail" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label" for="select">Town</label><br>
+                                <div>
+                                    <select id="select" class="form-control">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+                <div class="btn btn-primary btn-xs" id="source-button" style="display: none;">&lt; &gt;</div>
+            </div>
+        </div>
+    </div>
+</div>
