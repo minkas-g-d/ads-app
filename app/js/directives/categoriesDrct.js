@@ -1,6 +1,6 @@
 'use strict';
 
-adsApp.directive('categoriesDrct', function() {
+adsApp.directive('categoriesDrct', function(){
     return {
         controller: 'CategoriesCtrl',
         restrict: 'A',
